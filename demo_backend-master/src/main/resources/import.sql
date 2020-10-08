@@ -1,0 +1,1 @@
+INSERT INTO students (name, firstname, email, create_at) VALUES ('Marcos', 'Guzman', 'lalo@gmacon.vom', '2020-01-01')

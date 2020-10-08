@@ -17,4 +17,20 @@ public class StudentServiceImpl implements IStudentService {
     public List<Student> findAll() {
         return (List<Student>) studentDao.findAll();
     }
+
+    @Override
+    public Student findById(Long id) {
+        return studentDao.findById(id).orElse(null);
+    }
+
+    @Override
+    public Student save(Student student) {
+        return studentDao.save(student);
+    }
+
+    @Override
+    public void delete(Long id) {
+
+        studentDao.deleteById(id);
+    }
 }
