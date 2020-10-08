@@ -6,10 +6,14 @@
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
 
-###
-GET http://localhost:8080/api/students
+POST http://localhost:8080/api/students
+Content-Type: application/json
 
-
-
+{
+  "name" :  "Maria",
+  "firstname" : "Gomez",
+  "email" : "asdfasd@asdfas",
+  "createAt" : "2020-10-10"
+}
 
 ###
